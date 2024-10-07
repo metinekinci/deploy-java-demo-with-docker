@@ -23,7 +23,7 @@ This article provides a step-by-step guide for deploying a Java demo application
    ```
 
 4. **Create a Virtual Machine:**
-   Use the following command to create a VM with Ubuntu 20.04 LTS:
+   Use the following command to create a VM with Ubuntu 22.04 LTS:
    ```bash
    az vm create \
      --resource-group java-demo-app \
