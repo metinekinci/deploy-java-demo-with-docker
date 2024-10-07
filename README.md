@@ -41,14 +41,14 @@ This article provides a step-by-step guide for deploying a Java demo application
    - `--size Standard_B1s`: The VM size.
 
 5. **Open Ports for HTTP, HTTPS, and SSH:**
-   Allow inbound traffic on ports 22 (SSH), 80 (HTTP), and 443 (HTTPS) by running the following commands:
+   Allow inbound traffic on ports 80 (HTTP) and 443 (HTTPS) by running the following commands:
    ```bash
    az vm open-port --resource-group java-demo-app --name demoappvm --port 80 --priority 1100
    az vm open-port --resource-group java-demo-app --name demoappvm --port 443 --priority 1200
    ```
 
 6. **SSH into the VM:**
-   Now, you can SSH into the VM using the public IP address:
+   You can SSH into the VM using the public IP address:
    ```bash
    ssh azureuser@<VM_Public_IP> 
    ```
