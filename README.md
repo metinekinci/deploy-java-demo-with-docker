@@ -40,7 +40,7 @@ This article provides a step-by-step guide for deploying a Java demo application
    - `--generate-ssh-keys`: This generates an SSH key pair for accessing the VM.
    - `--size Standard_B1s`: The VM size.
 
-5. **Open Ports for HTTP, HTTPS, and SSH:**
+5. **Open Ports for HTTP and HTTPS:**
    Allow inbound traffic on ports 80 (HTTP) and 443 (HTTPS) by running the following commands:
    ```bash
    az vm open-port --resource-group java-demo-app --name demoappvm --port 80 --priority 1100
